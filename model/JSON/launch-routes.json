@@ -1,0 +1,16 @@
+[
+    { "id": "1",  "name": "Dhaka-Chandpur"},
+    { "id": "2",  "name": "Dhaka-Chor Kolmi" },
+    { "id": "3",  "name": "Dhaka-Chor Khali" },
+    { "id": "4",  "name": "Dhaka-Cawkhali" },
+    { "id": "5",  "name": "Dhaka-Chand Khali" },
+    { "id": "6",  "name": "Dhaka-Chondromohon" },
+    { "id": "7",  "name": "Dhaka-Chor Darial" },
+    { "id": "8",  "name": "Dhaka-Chairmanbari Ghat" },
+    { "id": "9",  "name": "Dhaka-C&B Ghat" },
+    { "id": "10", "name": "Dhaka-Chor Voyarabi" },
+    { "id": "11", "name": "Dhaka-Chobipur" },
+    { "id": "12", "name": "Dhaka-Chalita Toli" },
+    { "id": "13", "name": "Dhaka-Chor Borhan" },
+    { "id": "14", "name": "Dhaka-Babugong" }
+]

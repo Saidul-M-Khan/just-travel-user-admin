@@ -1,0 +1,9 @@
+[
+    { "id": "1", "name":"DHAKA-COX'S BAZAR"},
+    { "id": "2", "name":"DHAKA-CHITTAGONG" },
+    { "id": "3", "name":"DHAKA-RAJSHAHI" },
+    { "id": "4", "name":"DHAKA-SYLHET" },
+    { "id": "5", "name":"DHAKA-JOSHOR" },
+    { "id": "6", "name":"DHAKA-BARISAL" },
+    { "id": "7", "name":"DHAKA-SAIADPUR" }
+]

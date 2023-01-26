@@ -1,0 +1,15 @@
+#event {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.th {
+    background: #11101D;
+    font-weight: bold;
+    padding: 0px;
+
+}
+
+.tr {
+    padding: 2px;
+}

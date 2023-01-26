@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Travel</title>
+
+    <!-- font awesome cdn file link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./view/css/homepage.css">
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="./view/user/view/Bus.php" class="logo">Just travel <span>.</span></a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a data-scroll="feature" href="#feature">Developer</a></li>
+                <li><a href="./control/login.php">Login</a></li>
+                <li><a href="./control/register.php">Signup</a></li>
+            </ul>
+        </nav>
+
+        <div class="fas fa-bars"></div>
+
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="video">
+            <video src="./assets/video.mp4" loop muted autoplay></video>
+        </div>
+
+        <div class="content">
+            <h1>explore new places, <br> with just travel.</h1>
+            <p>Most Reliable Online Ticket Solution</p>
+        </div>
+
+    </section>
+
+    <section class="feature" id="feature">
+
+        <h1 class="heading"><span>w</span>eb <span>d</span>evelopers</h1>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="assets/saidul.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">Saidul Mursalin Khan</h3>
+                    <p>Developed <b><span style="color: red;">Admin</span></b> and <span style="color: red;"><b>Registered User</b></span> Part</p>
+                    
+                        <a href="https://www.facebook.com/saidul.khan2000" class="fab fa-facebook-f"></a>&nbsp;
+                        <a href="https://twitter.com/Saidul_M_Khan" class="fab fa-twitter"></a>&nbsp;
+                        <a href="https://github.com/Saidul-M-Khan" class="fab fa-github"></a>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/tamim.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">Istiak Mahbub Tamim </h3>
+                    <p>Developed <b><span style="color: red;">Merchant</span></b> Part</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <h1 class="credit">created by <span>AIUBian</span> | all rights reserved.</h1>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/saidul.khan2000" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/Saidul_M_Khan" class="fab fa-twitter"></a>
+            <a href="https://github.com/Saidul-M-Khan" class="fab fa-github"></a>
+        </div>
+
+    </section>
+
+    <!-- jquery cdn link  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+$('.fa-bars').click(function(){
+  $(this).toggleClass('fa-times');
+  $('.navbar').toggleClass('nav-toggle');
+});
+
+$(window).on('load scroll',function(){
+
+  $('.fa-bars').removeClass('fa-times');
+  $('.navbar').removeClass('nav-toggle');
+
+  if($(window).scrollTop() > 30){
+    $('header').addClass('header-active');
+  }else{
+    $('header').removeClass('header-active');
+  }
+
+  $('section').each(function(){
+    var id = $(this).attr('id');
+    var height = $(this).height();
+    var offset = $(this).offset().top - 200;
+    var top = $(window).scrollTop();
+    if(top >= offset && top < offset + height){
+      $('.navbar ul li a').removeClass('active');
+      $('.navbar').find('[data-scroll="' + id + '"]').addClass('active');
+    }
+  });
+
+});
+
+
+});
+    </script>
+
+
+
+</body>
+
+</html>
